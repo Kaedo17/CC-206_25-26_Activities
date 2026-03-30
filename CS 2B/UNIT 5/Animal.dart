@@ -1,10 +1,11 @@
+// CONCEPT: Variable Initialization to null
 class Animal {
   String name;
   String kingdom;
   String dob;
   int numlegs;
 
-  // Contructor
+  // CONCEPT: Named Function Parameters
   Animal({
     required this.name,
     required this.kingdom,
@@ -22,16 +23,18 @@ class Animal {
   }
 
   String displayInfo() {
+    // CONCEPT: Multiline Strings
     String animalInfo =
-        "Animal Name: $name \n"
-        "Kingdom: $kingdom \n"
-        "Date of Birth: $dob \n"
-        "Number of legs: $numlegs \n";
+        """Animal Name: $name
+Kingdom: $kingdom
+Date of Birth: $dob
+Number of legs: $numlegs""";
     return animalInfo;
   }
 }
 
 void main() {
+  // CONCEPT: No more "new" keyword
   Animal cat = Animal(
     name: "Kuring",
     kingdom: "Animalia",
@@ -42,7 +45,7 @@ void main() {
   cat.walk("Right");
 
   print(cat.displayInfo());
-  
+
   Animal fish = Animal(
     name: "Fishda",
     kingdom: "Animalia",

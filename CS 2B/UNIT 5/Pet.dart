@@ -4,6 +4,7 @@ class Pet extends Animal{
   String? nickname;
   int kindnessValue=0;
 
+  // CONCEPT: Constructor Shorthand
   Pet({
     required this.nickname,
     required String name,
@@ -12,6 +13,7 @@ class Pet extends Animal{
     required int numlegs,
   }) : super(name: name, kingdom: kingdom, dob: dob, numlegs: numlegs);
 
+  // CONCEPT: Named Constructors
   Pet.withNickname({
     required String nickname,
     required String name,
@@ -26,6 +28,7 @@ class Pet extends Animal{
   }
 
   void pet() {
+    // CONCEPT: Traditional if/else statement
     if (kindnessValue < 0) {
       print("Failed to pet, Kindness value is less than 0");
       return;
@@ -47,6 +50,7 @@ class Pet extends Animal{
 }
 
 void main() {
+  // CONCEPT: No more "new" keyword
   Pet dog = Pet(
     nickname: "Doggo",
     name: "Dog",
@@ -62,6 +66,7 @@ void main() {
   dog.shot();
   print(dog.displayInfo());
 
+  // CONCEPT: Named Constructors
   Pet dogTwo = Pet.withNickname(
     nickname: "Doggo2",
     name: "Dog2",

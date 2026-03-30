@@ -41,11 +41,13 @@ List<Animal> ZOO = [
 ];
 
 void main() {
+   // CONCEPT: For loop
   for (var animal in ZOO) {
     animal.walk("forward");
     print(animal.displayInfo());
   }
 
+  // CONCEPT: For loop with index iteration
   for (var pet in PETS) {
     if (pet == PETS[0]) {
       pet.kick();
@@ -54,6 +56,7 @@ void main() {
       pet.shot();
       print(pet.displayInfo());
     } else if (pet == PETS[2]) {
+      // CONCEPT: For loop
       for (int i = 0; i < 501; i++) {
         pet.pet();
       }
