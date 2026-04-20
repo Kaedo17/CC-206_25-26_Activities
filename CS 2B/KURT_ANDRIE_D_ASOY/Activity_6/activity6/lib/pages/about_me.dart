@@ -6,6 +6,10 @@ class AboutMe extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+          title: const Text('Kurt Andrie D. Asoy'),
+          centerTitle: true,
+        ),
       body: SingleChildScrollView(
           child: Container(
             padding: const EdgeInsets.all(20.0),
@@ -17,12 +21,13 @@ class AboutMe extends StatelessWidget {
                     Expanded(
                       child: Center(
                         child: Image(
-                          image: AssetImage('images/profile.png'),
+                          image: AssetImage('assets/images/profile.png'),
                           width: 200,
                           height: 200,
                         ),
                       ),
                     ),
+                    SizedBox(width: 20),
                     Expanded(
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -34,7 +39,7 @@ class AboutMe extends StatelessWidget {
                               fontSize: 20,
                             ),
                           ),
-                          Text('Nice to meet you, twin!'),
+                          Text('Nice to meet you!'),
                         ],
                       ),
                     ),

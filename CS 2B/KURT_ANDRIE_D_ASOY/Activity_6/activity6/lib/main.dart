@@ -1,4 +1,5 @@
 import 'package:activity6/pages/about_me.dart';
+import 'package:activity6/pages/home.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -17,7 +18,7 @@ class _MainAppState extends State<MainApp> {
   int selectedIndex = 0;
 
   static const List<Widget> pages = [
-    AboutMe(),
+    Home(),
     AboutMe(),
   ];
 
@@ -31,10 +32,6 @@ class _MainAppState extends State<MainApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Kurt Andrie D. Asoy'),
-          centerTitle: true,
-        ),
         body: pages[selectedIndex],
         bottomNavigationBar: BottomNavigationBar(
           type: BottomNavigationBarType.fixed,
