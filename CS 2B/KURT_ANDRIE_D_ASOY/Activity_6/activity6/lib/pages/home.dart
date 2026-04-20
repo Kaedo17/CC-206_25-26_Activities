@@ -31,8 +31,8 @@ class _HomeState extends State<Home> {
               SizedBox(height: 20),
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.grey,
-                  foregroundColor: Colors.white,
+                  backgroundColor: Colors.grey[400],
+                  foregroundColor: Colors.black,
                 ),
                 onPressed: () {
                   player.play(AssetSource('sounds/cat.mp3'));
