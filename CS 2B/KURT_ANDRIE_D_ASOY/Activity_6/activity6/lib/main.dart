@@ -75,7 +75,10 @@ class MainApp extends StatelessWidget {
                                   fontSize: 15,
                                 ),
                               ),
-                              Text('kurtandrie.asoy@wvsu.edu.ph', style: TextStyle(fontSize: 12),),
+                              Text(
+                                'kurtandrie.asoy@wvsu.edu.ph',
+                                style: TextStyle(fontSize: 12),
+                              ),
                             ],
                           ),
                         ],
@@ -92,7 +95,11 @@ class MainApp extends StatelessWidget {
 
                       child: Row(
                         children: [
-                          Icon(Icons.home_rounded, color: Colors.white, size: 30),
+                          Icon(
+                            Icons.home_rounded,
+                            color: Colors.white,
+                            size: 30,
+                          ),
                           SizedBox(width: 20),
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
@@ -104,7 +111,10 @@ class MainApp extends StatelessWidget {
                                   fontSize: 15,
                                 ),
                               ),
-                              Text('Montero St. Poblacion, Belison, Antique', style: TextStyle(fontSize: 12),),
+                              Text(
+                                'Montero St. Poblacion, Belison, Antique',
+                                style: TextStyle(fontSize: 12),
+                              ),
                             ],
                           ),
                         ],
@@ -133,7 +143,10 @@ class MainApp extends StatelessWidget {
                                   fontSize: 15,
                                 ),
                               ),
-                              Text('09123456789', style: TextStyle(fontSize: 12),),
+                              Text(
+                                '09123456789',
+                                style: TextStyle(fontSize: 12),
+                              ),
                             ],
                           ),
                         ],
@@ -150,7 +163,11 @@ class MainApp extends StatelessWidget {
 
                       child: Row(
                         children: [
-                          Icon(Icons.school_rounded, color: Colors.white, size: 30),
+                          Icon(
+                            Icons.school_rounded,
+                            color: Colors.white,
+                            size: 30,
+                          ),
                           SizedBox(width: 20),
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
@@ -162,7 +179,10 @@ class MainApp extends StatelessWidget {
                                   fontSize: 15,
                                 ),
                               ),
-                              Text('WEST VISAYAS STATE UNIVERSITY', style: TextStyle(fontSize: 12),),
+                              Text(
+                                'WEST VISAYAS STATE UNIVERSITY',
+                                style: TextStyle(fontSize: 12),
+                              ),
                             ],
                           ),
                         ],
@@ -179,7 +199,11 @@ class MainApp extends StatelessWidget {
 
                       child: Row(
                         children: [
-                          Icon(Icons.gamepad_rounded, color: Colors.white, size: 30),
+                          Icon(
+                            Icons.gamepad_rounded,
+                            color: Colors.white,
+                            size: 30,
+                          ),
                           SizedBox(width: 20),
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
@@ -191,16 +215,47 @@ class MainApp extends StatelessWidget {
                                   fontSize: 15,
                                 ),
                               ),
-                              Text('Gaming, Art, Music', style: TextStyle(fontSize: 12),),
+                              Text(
+                                'Gaming, Art, Music',
+                                style: TextStyle(fontSize: 12),
+                              ),
                             ],
                           ),
                         ],
                       ),
                     ),
 
-                    SizedBox(height: 50,),
+                    SizedBox(height: 50),
 
-                    
+                    Text(
+                      'My Biography',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                        
+                      ),
+                    ),
+                    SizedBox(height: 20),
+                    Container(
+                      padding: const EdgeInsets.all(50.0),
+                      
+                      decoration: BoxDecoration(
+                        border: Border.all(color: const Color.fromARGB(255, 71, 71, 71)),
+                        borderRadius: BorderRadius.circular(10.0),
+                        color: const Color.fromARGB(189, 158, 158, 158),
+                      ),
+                      child: Text(
+                        'Kurt Andrie D. Asoy\n'
+                        '🎵 Music Lover | 🎮 Gamer | 💻 PC Builder\n'
+                        '🎨 Portrait & Digital Artist\n\n'
+                        'I find my flow in the rhythm of music, the strategy of games, '
+                        'and the precision of building computers. When I\'m not at the keyboard, '
+                        'I\'m usually sketching portraits or creating digital artworks.',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(fontSize: 16),
+                      ),
+                    ),
                   ],
                 ),
               ],
