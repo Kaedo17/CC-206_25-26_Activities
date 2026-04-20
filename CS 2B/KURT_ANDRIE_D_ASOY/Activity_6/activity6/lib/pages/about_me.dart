@@ -30,6 +30,8 @@ class AboutMe extends StatelessWidget {
                       ),
                     ),
                     SizedBox(width: 20),
+
+                    // Introduction section
                     Expanded(
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -48,6 +50,8 @@ class AboutMe extends StatelessWidget {
                   ],
                 ),
                 SizedBox(height: 50),
+
+                // Personal detail section
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
@@ -235,6 +239,8 @@ class AboutMe extends StatelessWidget {
                       ),
                     ),
                     SizedBox(height: 20),
+
+                    // Biography section
                     Container(
                       padding: const EdgeInsets.all(50.0),
                       
