@@ -243,15 +243,29 @@ class AboutMe extends StatelessWidget {
                         borderRadius: BorderRadius.circular(10.0),
                         color: Colors.grey[400],
                       ),
-                      child: Text(
-                        'Kurt Andrie D. Asoy\n'
-                        '🎵 Music Lover | 🎮 Gamer | 💻 PC Builder | 🧠 Programmer\n'
-                        '🎨 Portrait & Digital Artist\n\n'
-                        'I find my flow in the rhythm of music, the strategy of games, '
-                        'and the precision of building computers. When I\'m not at the keyboard, '
-                        'I\'m usually sketching portraits or creating digital artworks.',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(fontSize: 16),
+                      child: Column(
+                        children: [
+                          Text(
+                            'Kurt Andrie D. Asoy',
+                            textAlign: TextAlign.center,
+                            style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                          ),
+                          SizedBox(height: 10),
+                          Text(
+                            '🎵 Music Lover | 🎮 Gamer | 💻 PC Builder | 🧠 Programmer\n'
+                            '🎨 Portrait & Digital Artist',
+                            textAlign: TextAlign.center,
+                            style: TextStyle(fontSize: 12),
+                          ),
+                          SizedBox(height: 20),
+                          Text(
+                            'I find my flow in the rhythm of music, the strategy of games, '
+                            'and the precision of building computers. When I\'m not at the keyboard, '
+                            'I\'m usually sketching portraits or creating digital artworks.',
+                            textAlign: TextAlign.center,
+                            style: TextStyle(fontSize: 16),
+                          ),
+                        ],
                       ),
                     ),
                   ],
