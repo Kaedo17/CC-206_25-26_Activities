@@ -9,6 +9,8 @@ class AboutMe extends StatelessWidget {
       appBar: AppBar(
           title: const Text('Kurt Andrie D. Asoy'),
           centerTitle: true,
+          backgroundColor: Colors.grey[400],
+          shadowColor: Colors.black,
         ),
       body: SingleChildScrollView(
           child: Container(
@@ -33,7 +35,7 @@ class AboutMe extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            'Hello! I am Kurt!',
+                            'Hello!I am Kurt Andrie D. Asoy!',
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
                               fontSize: 20,
@@ -52,9 +54,9 @@ class AboutMe extends StatelessWidget {
                     Container(
                       padding: const EdgeInsets.all(10.0),
                       decoration: BoxDecoration(
-                        border: Border.all(color: Colors.blueGrey),
+                        border: Border.all(color: Colors.grey),
                         borderRadius: BorderRadius.circular(10.0),
-                        color: Colors.blueGrey,
+                        color: Colors.grey[400],
                       ),
 
                       child: Row(
@@ -84,9 +86,9 @@ class AboutMe extends StatelessWidget {
                     Container(
                       padding: const EdgeInsets.all(10.0),
                       decoration: BoxDecoration(
-                        border: Border.all(color: Colors.blueGrey),
+                        border: Border.all(color: Colors.grey),
                         borderRadius: BorderRadius.circular(10.0),
-                        color: Colors.blueGrey,
+                        color: Colors.grey[400],
                       ),
 
                       child: Row(
@@ -120,9 +122,9 @@ class AboutMe extends StatelessWidget {
                     Container(
                       padding: const EdgeInsets.all(10.0),
                       decoration: BoxDecoration(
-                        border: Border.all(color: Colors.blueGrey),
+                        border: Border.all(color: Colors.grey),
                         borderRadius: BorderRadius.circular(10.0),
-                        color: Colors.blueGrey,
+                        color: Colors.grey[400],
                       ),
 
                       child: Row(
@@ -152,9 +154,9 @@ class AboutMe extends StatelessWidget {
                     Container(
                       padding: const EdgeInsets.all(10.0),
                       decoration: BoxDecoration(
-                        border: Border.all(color: Colors.blueGrey),
+                        border: Border.all(color: Colors.grey),
                         borderRadius: BorderRadius.circular(10.0),
-                        color: Colors.blueGrey,
+                        color: Colors.grey[400],
                       ),
 
                       child: Row(
@@ -188,9 +190,9 @@ class AboutMe extends StatelessWidget {
                     Container(
                       padding: const EdgeInsets.all(10.0),
                       decoration: BoxDecoration(
-                        border: Border.all(color: Colors.blueGrey),
+                        border: Border.all(color: Colors.grey),
                         borderRadius: BorderRadius.circular(10.0),
-                        color: Colors.blueGrey,
+                        color: Colors.grey[400],
                       ),
 
                       child: Row(
@@ -212,7 +214,7 @@ class AboutMe extends StatelessWidget {
                                 ),
                               ),
                               Text(
-                                'Gaming, Art, Music',
+                                'Gaming, Art, Music, Programming',
                                 style: TextStyle(fontSize: 12),
                               ),
                             ],
@@ -237,13 +239,13 @@ class AboutMe extends StatelessWidget {
                       padding: const EdgeInsets.all(50.0),
                       
                       decoration: BoxDecoration(
-                        border: Border.all(color: const Color.fromARGB(255, 71, 71, 71)),
+                        border: Border.all(color: Colors.grey),
                         borderRadius: BorderRadius.circular(10.0),
-                        color: const Color.fromARGB(189, 158, 158, 158),
+                        color: Colors.grey[400],
                       ),
                       child: Text(
                         'Kurt Andrie D. Asoy\n'
-                        '🎵 Music Lover | 🎮 Gamer | 💻 PC Builder\n'
+                        '🎵 Music Lover | 🎮 Gamer | 💻 PC Builder | 🧠 Programmer\n'
                         '🎨 Portrait & Digital Artist\n\n'
                         'I find my flow in the rhythm of music, the strategy of games, '
                         'and the precision of building computers. When I\'m not at the keyboard, '

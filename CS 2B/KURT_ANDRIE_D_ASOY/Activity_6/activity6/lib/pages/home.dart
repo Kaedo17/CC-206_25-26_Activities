@@ -16,6 +16,8 @@ class _HomeState extends State<Home> {
       appBar: AppBar(
         title: const Text('My Pets'),
         centerTitle: true,
+          backgroundColor: Colors.grey[400],
+          shadowColor: Colors.black,
       ),
       body: Container(
         padding: const EdgeInsets.all(20.0),
@@ -29,7 +31,7 @@ class _HomeState extends State<Home> {
               SizedBox(height: 20),
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.blueGrey,
+                  backgroundColor: Colors.grey,
                   foregroundColor: Colors.white,
                 ),
                 onPressed: () {
