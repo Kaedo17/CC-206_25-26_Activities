@@ -35,7 +35,7 @@ class AboutMe extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            'Hello!I am Kurt Andrie D. Asoy!',
+                            'Hello! I am Kurt Andrie D. Asoy!',
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
                               fontSize: 20,
