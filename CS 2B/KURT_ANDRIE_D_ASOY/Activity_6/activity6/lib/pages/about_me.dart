@@ -1,0 +1,258 @@
+import 'package:flutter/material.dart';
+
+class AboutMe extends StatelessWidget {
+  const AboutMe({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: SingleChildScrollView(
+          child: Container(
+            padding: const EdgeInsets.all(20.0),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Row(
+                  children: [
+                    Expanded(
+                      child: Center(
+                        child: Image(
+                          image: AssetImage('images/profile.png'),
+                          width: 200,
+                          height: 200,
+                        ),
+                      ),
+                    ),
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            'Hello! I am Kurt!',
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 20,
+                            ),
+                          ),
+                          Text('Nice to meet you, twin!'),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+                SizedBox(height: 50),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    Container(
+                      padding: const EdgeInsets.all(10.0),
+                      decoration: BoxDecoration(
+                        border: Border.all(color: Colors.blueGrey),
+                        borderRadius: BorderRadius.circular(10.0),
+                        color: Colors.blueGrey,
+                      ),
+
+                      child: Row(
+                        children: [
+                          Icon(Icons.email, color: Colors.white, size: 30),
+                          SizedBox(width: 20),
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                'Email',
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 15,
+                                ),
+                              ),
+                              Text(
+                                'kurtandrie.asoy@wvsu.edu.ph',
+                                style: TextStyle(fontSize: 12),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+                    SizedBox(height: 10),
+                    Container(
+                      padding: const EdgeInsets.all(10.0),
+                      decoration: BoxDecoration(
+                        border: Border.all(color: Colors.blueGrey),
+                        borderRadius: BorderRadius.circular(10.0),
+                        color: Colors.blueGrey,
+                      ),
+
+                      child: Row(
+                        children: [
+                          Icon(
+                            Icons.home_rounded,
+                            color: Colors.white,
+                            size: 30,
+                          ),
+                          SizedBox(width: 20),
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                'Home Address',
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 15,
+                                ),
+                              ),
+                              Text(
+                                'Montero St. Poblacion, Belison, Antique',
+                                style: TextStyle(fontSize: 12),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+                    SizedBox(height: 10),
+                    Container(
+                      padding: const EdgeInsets.all(10.0),
+                      decoration: BoxDecoration(
+                        border: Border.all(color: Colors.blueGrey),
+                        borderRadius: BorderRadius.circular(10.0),
+                        color: Colors.blueGrey,
+                      ),
+
+                      child: Row(
+                        children: [
+                          Icon(Icons.phone, color: Colors.white, size: 30),
+                          SizedBox(width: 20),
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                'Phone Number',
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 15,
+                                ),
+                              ),
+                              Text(
+                                '09123456789',
+                                style: TextStyle(fontSize: 12),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+                    SizedBox(height: 10),
+                    Container(
+                      padding: const EdgeInsets.all(10.0),
+                      decoration: BoxDecoration(
+                        border: Border.all(color: Colors.blueGrey),
+                        borderRadius: BorderRadius.circular(10.0),
+                        color: Colors.blueGrey,
+                      ),
+
+                      child: Row(
+                        children: [
+                          Icon(
+                            Icons.school_rounded,
+                            color: Colors.white,
+                            size: 30,
+                          ),
+                          SizedBox(width: 20),
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                'School',
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 15,
+                                ),
+                              ),
+                              Text(
+                                'WEST VISAYAS STATE UNIVERSITY',
+                                style: TextStyle(fontSize: 12),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+                    SizedBox(height: 10),
+                    Container(
+                      padding: const EdgeInsets.all(10.0),
+                      decoration: BoxDecoration(
+                        border: Border.all(color: Colors.blueGrey),
+                        borderRadius: BorderRadius.circular(10.0),
+                        color: Colors.blueGrey,
+                      ),
+
+                      child: Row(
+                        children: [
+                          Icon(
+                            Icons.videogame_asset_rounded,
+                            color: Colors.white,
+                            size: 30,
+                          ),
+                          SizedBox(width: 20),
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                'Hobbies',
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 15,
+                                ),
+                              ),
+                              Text(
+                                'Gaming, Art, Music',
+                                style: TextStyle(fontSize: 12),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+
+                    SizedBox(height: 50),
+
+                    Text(
+                      'My Biography',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                        
+                      ),
+                    ),
+                    SizedBox(height: 20),
+                    Container(
+                      padding: const EdgeInsets.all(50.0),
+                      
+                      decoration: BoxDecoration(
+                        border: Border.all(color: const Color.fromARGB(255, 71, 71, 71)),
+                        borderRadius: BorderRadius.circular(10.0),
+                        color: const Color.fromARGB(189, 158, 158, 158),
+                      ),
+                      child: Text(
+                        'Kurt Andrie D. Asoy\n'
+                        '🎵 Music Lover | 🎮 Gamer | 💻 PC Builder\n'
+                        '🎨 Portrait & Digital Artist\n\n'
+                        'I find my flow in the rhythm of music, the strategy of games, '
+                        'and the precision of building computers. When I\'m not at the keyboard, '
+                        'I\'m usually sketching portraits or creating digital artworks.',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(fontSize: 16),
+                      ),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          ),
+        ),
+    );
+  }
+}
